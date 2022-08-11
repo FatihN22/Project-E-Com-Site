@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #f3fe39;
+}
+
+.backtop{
+    position: absolute;
+    right: 40px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #f3fe39;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #111010;
+    position: fixed;
+}
+.navbar{
+    background-color: #131313;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 50px;
+    align-items: center;
+}
+.navbar nav ul li a{
+    margin-right: 30px;
+    color: #f3fe39;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 500;
+}
+.navbar .image img{
+    filter: brightness(2.5);
+}
+.header{
+    background: radial-gradient(#111010,#131313)
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding: 0px 25px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-2 img{
+    max-width: 100%;
+    padding: 20px 0;
+}
+.col-2 h1{
+    color: #f3fe39;
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+.col-2 {
+    color: #f3fe39;
+}
+.btn{
+    display: inline-block;
+    background-color: #f3fe39;
+    color: #030313;
+    padding: 10px 30px;
+    margin: 30px 0;
+    font-weight: 600;
+    border-radius: 20px;
+}
+.categories{
+    top: 0;
+    background-color: #f3fe39;
+}
+
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding: 0 25px;
+}
+.col-3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+.row .col-3 img{
+    transition: 300ms ease-in-out;
+    width: 100%;
+    cursor: pointer;
+}
+.row .col-3 img:hover{
+    transform: translateY(-5%); 
+    box-shadow: 15px 28px 17px -6px #111010;
+    outline: none;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.title{
+    text-align: center;
+    margin: 0 auto 50px;
+    position: relative;
+    line-height: 60px;
+    color: #111010;
+}
+.title::after{
+    content: '';
+    background-color: #111010;
+    width: 90px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+a h4{
+    color: #111010;
+}
+.col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+}
+.col-4 img{
+    width: 100%;
+    transition: 250ms all ease-out;
+    cursor: pointer;
+}
+.col-4 img:hover{
+    transform: translateY(-5%); 
+    box-shadow: 15px 28px 17px -6px #111010;
+    outline: none;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.rating{
+    width: 80%;
+    display:flex;
+    justify-content: space-between;
+}
+.rating i{
+    color: #111010;
+}
+.rating {
+    font-family: 'Roboto',serif;
+    font-style: oblique;
+}
+.offer{
+    background-color: #111010;
+}
+.row{
+    padding: 20px 0;
+}
+small{
+    color: aquamarine;
+}
+
+.row .col-5 img{
+    width: 130px;
+    padding: 50px 0;
+}
+.footer{
+    background-color: #111010;
+    color: aliceblue;
+}
+.footer h3{
+    color: #f3fe39;
+}
+.footer a{
+    color: #fff;
+}
+.footer-col1{
+    text-align: center;
+}
+.footer-col1 img{
+    width: 150px;
+}
+.copyright{
+    text-align: center;
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.733); 
+    padding: 10px 0;                                             
+}
+.copyright h4{
+    font-family: 'Roboto Slab', sans-serif; 
+    font-weight: 200;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.501);
+}
+.copyright span{
+    font-family: 'Roboto Flex', sans-serif;
+   color: #f4fe39ad;                                             
+}
