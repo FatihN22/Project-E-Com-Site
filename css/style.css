@@ -138,10 +138,12 @@ a h4{
     color: #111010;
 }
 .col-4{
+    position: relative;
     flex-basis: 25%;
     padding: 10px;
     min-width: 200px;
     margin-bottom: 50px;
+    overflow: hidden; 
 }
 .col-4 img{
     width: 100%;
@@ -155,6 +157,44 @@ a h4{
     border-bottom-right-radius: 20px;
     border-top-left-radius: 20px;
 }
+.size{
+    bottom: -250px;
+    position: absolute;
+    padding: 0px 20px;
+    transition: 500ms;
+}
+.color{
+    transition: 600ms;
+    margin-top: 5%;
+}
+.col-4 .a:hover .size{
+    bottom: 80px;
+}
+.btn {
+    transition: 900ms;
+}
+span{
+    color: white;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 26px;
+    background-color: rgb(7, 90, 162);
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.color{
+    transition: 600ms;
+}
+.color span{
+    border: 1px solid #000;
+}
+.color span:nth-child(2){
+    background-color: #fff;
+}
+
 .rating{
     width: 80%;
     display:flex;
