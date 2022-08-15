@@ -103,18 +103,42 @@ body{
     flex-basis: 30%;
     min-width: 250px;
     margin-bottom: 30px;
+    position: relative;
+
+}
+.col-3 .catinfo{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.355);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    height: 100%;
+    transition: 400ms ease-in-out;
+}
+.catinfo  h3{
+    letter-spacing: 2px;
+    font-family: 'SPORTIVE', sans-serif;
+    font-size: 33px;    
+    color: #fff;
+    font-weight: 800;                                
 }
 .row .col-3 img{
-    transition: 300ms ease-in-out;
     width: 100%;
-    cursor: pointer;
+    height: 101%;
 }
-.row .col-3 img:hover{
+.col-3img{
+    transition: 400ms ease-in-out;
+}
+.row .col-3 .col-3img:hover{
     transform: translateY(-5%); 
     box-shadow: 15px 28px 17px -6px #111010;
     outline: none;
-    border-bottom-right-radius: 20px;
-    border-top-left-radius: 20px;
+}
+.col-3img:hover .catinfo{
+    visibility: visible;
 }
 .title{
     text-align: center;
@@ -143,7 +167,6 @@ a h4{
     padding: 10px;
     min-width: 200px;
     margin-bottom: 50px;
-    overflow: hidden; 
 }
 .col-4 img{
     width: 100%;
@@ -158,29 +181,58 @@ a h4{
     border-top-left-radius: 20px;
 }
 .size{
-    bottom: -250px;
+    bottom: 80px;
     position: absolute;
     padding: 0px 20px;
     transition: 500ms;
+}
+.size #firsth, #secondh, #sa{
+    visibility: hidden;
+    opacity: 0;
 }
 .color{
     transition: 600ms;
     margin-top: 5%;
 }
-.col-4 .a:hover .size{
-    bottom: 80px;
+#firsth{
+    transform: translateY(100px);
+    transition: 500ms;
+}
+.col-4 .a:hover #firsth{
+    /* bottom: 80px; */
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(-0px);
+} 
+#secondh{
+    transform: translateY(100px);
+    transition: 900ms;
+}
+.col-4 .a:hover #secondh{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+#sa{
+    transform: translateY(100px);
+    transition: 1200ms;
+}
+.col-4 .a:hover #sa{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
 }
 .btn {
     transition: 900ms;
 }
-span{
-    color: white;
+span#firsth, span#secondh{
+    color: #111010;
     width: 26px;
     height: 26px;
     border-radius: 50%;
     text-align: center;
     line-height: 26px;
-    background-color: rgb(7, 90, 162);
+    background-color: #f3fe39;
     display: inline-block;
     margin: 0 5px;
     cursor: pointer;
@@ -191,10 +243,6 @@ span{
 .color span{
     border: 1px solid #000;
 }
-.color span:nth-child(2){
-    background-color: #fff;
-}
-
 .rating{
     width: 80%;
     display:flex;
